@@ -1,3 +1,10 @@
+# Frontend codes for our memories app
+
+uploaded to vercel but still cant manage to connect backend api to here (!must fix)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
