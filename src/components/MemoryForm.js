@@ -11,13 +11,15 @@ const MemoryForm = () => {
     const [error, setError] = useState(null);
     const [emptyFields, setEmptyFields] = useState([]);
 
+    const rootUrl = process.env.REACT_APP_API_BASE_URL;
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         const memory = { text, note, date, image }
 
-        const response = await fetch('/api/memories', {
+        const response = await fetch(`${rootUrl}/api/memories`, {
             method: 'POST',
             body: JSON.stringify(memory),
             headers: {

@@ -9,10 +9,11 @@ const Us = () => {
     // console.log(hour);
     // // console.log(ourDate)
     // // const days = useRef(537);
+    const rootUrl = process.env.REACT_APP_API_BASE_URL;
 
     useEffect(() => {
         const fetchDate = async () => {
-            const response = await fetch('/api/dates')
+            const response = await fetch(`${rootUrl}/api/dates`)
             const json = await response.json()
             if (response.ok) {
                 setOurDate(json)

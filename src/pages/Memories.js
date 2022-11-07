@@ -7,10 +7,11 @@ import MemoryForm from "../components/MemoryForm";
 
 const Home = () => {
     const { memories, dispatch } = useMemoriesContext();
+    const rootUrl = process.env.REACT_APP_API_BASE_URL;
 
     useEffect(() => {
         const fetchMemories = async () => {
-            const response = await fetch("/api/memories")
+            const response = await fetch(`${rootUrl}/api/memories`)
             const json = await response.json();
 
             if (response.ok) {
@@ -18,7 +19,7 @@ const Home = () => {
             }
         }
         fetchMemories()
-    }, [dispatch])
+    }, [dispatch, rootUrl])
 
     return (
         <div className="home">
