@@ -1,8 +1,6 @@
 # Frontend codes for our memories app
 
-uploaded to vercel but still cant manage to connect backend api to here (!must fix)
-
-
+frontend react codes connected to the backend api ^^
 
 
 # Getting Started with Create React App
