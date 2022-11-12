@@ -14,7 +14,7 @@ function App() {
         <div className="pages">
           <Routes>
             <Route
-              path='/'
+              path='/us'
               element={<Us />}
             >
 

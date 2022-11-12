@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import ReactPlayer from 'react-player/youtube'
 // import AudioPlayer from "./AudioPlayer";
 // import tracks from "./tracks";
 
 const Navbar = () => {
+    let activeStyle = {
+        color: "cyan"
+    }
     // const vidstyle = {
     //     margin: '20px 10px 30px 40px'
     // };
@@ -25,15 +28,21 @@ const Navbar = () => {
                 {/* <h1 className="title">Memories of us</h1> */}
 
                 <div className="links">
-                    <Link to='/'>
+                    <NavLink to='/us' style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }>
                         <h4 className="linkss">us</h4>
-                    </Link>
-                    <Link to='/memories'>
+                    </NavLink>
+                    <NavLink to='/memories' style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }>
                         <h4 className="linkss">memories</h4>
-                    </Link>
-                    <Link to='/special'>
+                    </NavLink>
+                    <NavLink to='/special' style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }>
                         <h4 className="linkss">special</h4>
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </header>

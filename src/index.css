@@ -106,7 +106,7 @@ header .container {
   mix-blend-mode: multiply;
 }
 
-.dodge {
+/* .dodge {
   background: radial-gradient(circle, white, black 35%) center / 25% 25%;
   position: absolute;
   top: -100%;
@@ -115,7 +115,7 @@ header .container {
   bottom: 0;
   mix-blend-mode: color-dodge;
   animation: dodge-area 5s linear infinite;
-}
+} */
 
 @keyframes dodge-area {
   to {
